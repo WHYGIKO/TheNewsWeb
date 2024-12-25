@@ -1,0 +1,13 @@
+@media(max-width: 1250px) {
+    .about_box {
+        margin: 0 auto;
+        max-width: 800px;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 1150px) {
+    .footer_container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
