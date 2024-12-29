@@ -16,9 +16,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
 }
 .nav_logo {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,12 +34,10 @@
 }
 .nav_list {
     display: flex;
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-.nav_item {
-    margin: 15px;
 }
 .nav_link {
     font-family: Roboto;
@@ -48,10 +46,62 @@
     line-height: 21.09px;
     text-decoration: none;
     color: #3A3838;
+    transition: 0.3s;
 }
 .nav_link:hover {
     color: #EF4423;
-    transition: 0.3s;
+}
+.nav_bottom_list,
+.nav_bottom_list_sec {
+    border-top: 1px solid #a6a9b2;
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav_bottom_card {
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.nav_bottom_card:hover a{
+    color: #EF4423;
+}
+.nav_bottom_card:hover .nav_svg path{
+    fill: #EF4423;
+    stroke: #EF4423;
+}
+.nav_bottom_card:hover .nav_svg_menu path{
+    fill: #EF4423;
+    stroke: #EF4423;
+}
+.nav_svg,
+.nav_svg_menu  {
+    background-color: unset;
+    width: 60px;
+    height: 60px;
+}
+.nav_svg path,
+.nav_svg_menu path {
+    transition: 0.5s;
+    fill: #a6a9b2;
+    stroke: #a6a9b2;
+}
+.nav_bottom_link {
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #a6a9b2;
 }
 .about {
     display: flex;
